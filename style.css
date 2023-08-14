@@ -1,9 +1,7 @@
-h1{
-    color: blue;
-}
-.carro{
-    color: black;
-}
-.fonts{
-    font-size: 40px;
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }

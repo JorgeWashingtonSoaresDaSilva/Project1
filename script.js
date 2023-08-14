@@ -1,38 +1,16 @@
-var nome_carro = "Novo Uno";
-var n_porta = 4;
-var cor_carro = azul;
-var ano_carro = 2022;
-var sistema_eletrico = true;
-var velociade = 0;
-var ligado = false;
-var parado = false;
+let butao = document.getElementById("bt");
+let dark_theme = false;
 
-const marca = "Fiat";
-
-function acelerar(){
-    if(velociade < 120){
-        velociade += 1;
+function change_background(){
+    if(dark_theme == false){
+        dark_theme = true;
+        document.body.style.background = "white"
+        butao.style.background = "black"
+        butao.style.color = "white"
+    }else{
+        dark_theme =false;
+        document.body.style.background = "black"
+        butao.style.background = "white"
+        butao.style.color = "black"
     }
-}
-function frear(){
-   if(velociade > 0){
-        velociade -+ 1;
-   }
-}
-function parar(){
-   if(velociade == 0){
-    parado = true;
-   }else{
-    parado = false;
-   }
-}
-function ligar(){
-    if(ligado == false){
-        ligado = true;
-    }
-}
-function desligar (){
-   if(ligado == true){
-        ligado = false;
-   }
 }
